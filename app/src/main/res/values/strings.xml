@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CALM</string>
+    <string name="title_activity_search_station">search_station</string>
+    <string name="title_activity_complaint">complaint</string>
+</resources>
