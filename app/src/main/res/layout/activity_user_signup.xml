@@ -1,109 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_signup">
+    tools:context=".user_signup"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="121dp"
         android:layout_marginLeft="121dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:text="Sign Up"
         android:textSize="30dp" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/name"
         android:layout_width="227dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/password"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText7"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="198dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="New Password"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/confirm"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText7"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="409dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Confirm Password"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/phno"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText7"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginBottom="333dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/aadhar"
         android:layout_width="226dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText7"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="261dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Aadhar Number"
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/mail"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText7"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="185dp"
         android:ems="10"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
         android:hint="Email"
         android:inputType="textEmailAddress" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText12"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_marginStart="155dp"
         android:layout_marginLeft="155dp"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="20dp"
         android:text="Submit" />
 
 
-</RelativeLayout>
+</LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sathyajith.calm">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,14 +13,11 @@
         <activity android:name=".StationSearch"></activity>
         <activity android:name=".addmissing" />
         <activity android:name=".addlookout" />
-        <activity android:name=".enterlookout" />
         <activity android:name=".CrimeRegister" />
-        <activity android:name=".CrimeRegistration" />
         <activity android:name=".LookoutSearch" />
         <activity android:name=".MissingSearch" />
         <activity android:name=".Crimesearch" />
         <activity android:name=".StationRegistration" />
-        <activity android:name=".complaint_activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

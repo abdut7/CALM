@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "819647443617",
+    "firebase_url": "https://calm-e8185.firebaseio.com",
+    "project_id": "calm-e8185",
+    "storage_bucket": "calm-e8185.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819647443617:android:3e39615aab947b57",
+        "android_client_info": {
+          "package_name": "com.example.sathyajith.calm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819647443617-tdbecnp2kd05gkdh0cmiikor07m0nv75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sathyajith.calm",
+            "certificate_hash": "3fae4e8ec3fc1e8e6ac5e92f76596a67eb28c51b"
+          }
+        },
+        {
+          "client_id": "819647443617-vgfq8e3mn21akh8tmb1osj2giaa2cnpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR6O0090PE_ENehvvTvFKbWjDrZ71IQ48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819647443617-vgfq8e3mn21akh8tmb1osj2giaa2cnpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

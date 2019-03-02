@@ -23,12 +23,12 @@
 
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/dist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
-        android:text="TextView" />
+        android:text="District" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -38,6 +38,7 @@
         android:layout_marginLeft="20dp"/>
 </LinearLayout>
     <Button
+        android:id="@+id/search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
