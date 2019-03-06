@@ -8,35 +8,19 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MissingSearch extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    TextView tv;
-    Spinner sp;
+public class MissingSearch extends AppCompatActivity  {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_missing_search);
-        tv=(TextView)findViewById(R.id.textView);
-        sp=(Spinner)findViewById(R.id.spinner);
-        String  d[]={"ALAPUZHA","ERNAKULAM","IDUKKI","KANNUR","KASARGOD","KOLLAM","KOTTAYAM","KOZHIKODE","MALAPPURAM","PALAKKAD","PATHANAMTHITTA","THIRUVANTHPURAM","THRISSUR","WAYANAD"};
-        ArrayAdapter<String>    ad=new ArrayAdapter<>(this,android.R.layout.activity_list_item);
-        sp.setAdapter(ad);
-        sp.setOnItemSelectedListener(this);
+
 
 
 
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String  item=parent.getItemAtPosition(position).toString();
-        tv.setText(item);
 
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
 }

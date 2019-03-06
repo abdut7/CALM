@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userhomepage"
+    android:orientation="vertical"
+    android:background="#0A0000">
+    <ImageButton
+        android:id="@+id/userhome"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:cropToPadding="false"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/userhome"
+        ></ImageButton>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="USER HOMEPAGE"
+        android:textSize="40dp"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FCF7F7" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/fcomplaint"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="FILE COMPLAINT"
+        android:background="@drawable/buttoncolor"
+        />
+    <Button
+    android:id="@+id/vmissing"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="VIEW MISSING"
+    android:background="@drawable/buttoncolor"
+    />
+    <Button
+    android:id="@+id/vlookout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="VIEW LOOKOUT"
+    android:background="@drawable/buttoncolor"
+    />
+    <Button
+    android:id="@+id/scrime"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="SEARCH CRIME"
+    android:background="@drawable/buttoncolor"
+    />
+    <Button
+        android:id="@+id/sstation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="POLICE STATIONS"
+        android:background="@drawable/buttoncolor"
+        />
+</LinearLayout>

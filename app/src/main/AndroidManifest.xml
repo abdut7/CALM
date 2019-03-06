@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sathyajith.calm">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StationSearch"></activity>
+        <activity android:name=".Policehomepage"></activity>
+        <activity android:name=".stationsignin" />
+        <activity android:name=".Userhomepage" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StationSearch" />
         <activity android:name=".addmissing" />
         <activity android:name=".addlookout" />
         <activity android:name=".CrimeRegister" />
@@ -18,7 +23,7 @@
         <activity android:name=".MissingSearch" />
         <activity android:name=".Crimesearch" />
         <activity android:name=".StationRegistration" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Firstpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

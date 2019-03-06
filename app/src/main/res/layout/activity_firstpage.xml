@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firstpage"
+    android:orientation="vertical"
+    android:background="#0F0000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALM"
+        android:layout_marginLeft="110dp"
+        android:textSize="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FCFAFA"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:cropToPadding="false"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/userbutton"
+            android:onClick="usersignin"></ImageButton>
+        <ImageButton
+            android:id="@+id/police"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:cropToPadding="false"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cop"
+            android:onClick="policesignin"></ImageButton>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000" />
+    <Button
+        android:id="@+id/lookout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="LOOKOUT"
+        android:background="@drawable/buttoncolor"
+        android:onClick="lookoutclick"/>
+    <TextView
+        android:id="@+id/line2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000" />
+    <Button
+        android:id="@+id/missing"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="MISSING"
+        android:background="@drawable/buttoncolor"
+        android:onClick="missingclick"/>
+    <TextView
+        android:id="@+id/line3"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000" />
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN UP"
+        android:background="@drawable/buttoncolor"/>
+    <TextView
+        android:id="@+id/line4"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000" />
+
+    />
+
+</LinearLayout>

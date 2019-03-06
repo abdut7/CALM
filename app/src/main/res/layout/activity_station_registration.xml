@@ -12,8 +12,8 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
         android:text="STATION REGISTRATION"
         android:textSize="25dp" />
     <LinearLayout
@@ -27,7 +27,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:hint="Station Name"/>
     </LinearLayout>
     <LinearLayout
@@ -41,7 +41,7 @@
             android:ems="10"
             android:inputType="textPassword"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:hint="Password"/>
 
     </LinearLayout>
@@ -56,7 +56,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:hint="District"/>
     </LinearLayout>
     <LinearLayout
@@ -70,7 +70,7 @@
             android:ems="10"
             android:inputType="number"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:hint="Pin Code"/>
 
     </LinearLayout>
@@ -85,7 +85,7 @@
             android:ems="10"
             android:inputType="number"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:hint="Phone Number"/>
 
     </LinearLayout>
@@ -93,7 +93,7 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="160dp"
         android:text="SUBMIT" />
 

@@ -30,8 +30,8 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName" />
+        android:hint="e-Mail"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/password"
@@ -51,10 +51,12 @@
 
         android:layout_marginLeft="150dp"
         android:layout_marginTop="74dp"
-        android:text="Sign In" />
+        android:text="Sign In"
+        />
     <Button
         android:id="@+id/tst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="goto"/>
+        android:text="goto"
+        />
 </LinearLayout>

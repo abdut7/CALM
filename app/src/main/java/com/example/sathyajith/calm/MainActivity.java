@@ -30,33 +30,32 @@ public class MainActivity extends AppCompatActivity {
 test=(Button)findViewById(R.id.tst);
         edpassword=(EditText)findViewById(R.id.password);
         blogin=(Button)findViewById(R.id.signin);
-
-       // mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         blogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 String u=edusername.getText().toString();
 String p=edpassword.getText().toString();
-//                    mAuth.signInWithEmailAndPassword(u, p)
-//                                            .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-//                                                @Override
-//                                                public void onComplete(@NonNull Task<AuthResult> task) {
-//                                                    if (task.isSuccessful()) {
-//                                                        // Sign in success, update UI with the signed-in user's information
-//                                                        Toast.makeText(MainActivity.this, "Succes", Toast.LENGTH_SHORT).show();
-//                                                        FirebaseUser user = mAuth.getCurrentUser();
-//
-//                                                    } else {
-//                                                        // If sign in fails, display a message to the user.
-//
-//                                                        Toast.makeText(MainActivity.this, "Authentication failed.",
-//                                            Toast.LENGTH_SHORT).show();
-//
-//                                }
-//
-//                                // ...
-//                            }
-//                        });
+                    mAuth.signInWithEmailAndPassword(u, p)
+                                            .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                                    if (task.isSuccessful()) {
+                                                        // Sign in success, update UI with the signed-in user's information
+                                                        Toast.makeText(MainActivity.this, "Succes", Toast.LENGTH_SHORT).show();
+                                                        FirebaseUser user = mAuth.getCurrentUser();
+
+                                                    } else {
+                                                        // If sign in fails, display a message to the user.
+
+                                                        Toast.makeText(MainActivity.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+
+                                }
+
+                                // ...
+                            }
+                        });
                 Toast.makeText(MainActivity.this, "user "+u+"\n"+p, Toast.LENGTH_SHORT).show();
 
               }
@@ -64,9 +63,10 @@ String p=edpassword.getText().toString();
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,user_signup.class));
+                startActivity(new Intent(MainActivity.this,Userhomepage.class));
             }
         });
 
     }
+
 }
