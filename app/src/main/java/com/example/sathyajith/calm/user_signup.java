@@ -1,5 +1,8 @@
 package com.example.sathyajith.calm;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +35,8 @@ public class user_signup extends AppCompatActivity {
         edaadhar = (EditText) findViewById(R.id.aadhar);
         edmail = (EditText) findViewById(R.id.mail);
         bsubmit = (Button) findViewById(R.id.submit);
+        SharedPreferences sp=getSharedPreferences("MyPref", Activity.MODE_PRIVATE);
+        final SharedPreferences.Editor ed= sp.edit();
         try {
             mAuth = FirebaseAuth.getInstance();
         }catch (Exception e)
@@ -42,7 +47,7 @@ public class user_signup extends AppCompatActivity {
             bsubmit.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        String name=edname.getText().toString();
+        final String name=edname.getText().toString();
         String pass=edpass.getText().toString();
         String confirm=edconfirm.getText().toString();
         String phone=edphone.getText().toString();
@@ -54,8 +59,11 @@ public class user_signup extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-
                             FirebaseUser user = mAuth.getCurrentUser();
+                            ed.putString("username",name);
+                            ed.putBoolean("login_status",true);
+                            ed.commit();
+                            startActivity(new Intent(user_signup.this,Userhomepage.class));
 
                         } else {
                             // If sign in fails, display a message to the user.

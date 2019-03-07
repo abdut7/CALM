@@ -70,4 +70,5 @@
         android:text="POLICE STATIONS"
         android:background="@drawable/buttoncolor"
         />
+
 </LinearLayout>

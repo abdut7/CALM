@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-ripple:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/65c4161440e3f99f883f1e96cda13651/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/65c4161440e3f99f883f1e96cda13651/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/5f9d6cb4c4fdeca146a4c67dc3b33b0c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/5f9d6cb4c4fdeca146a4c67dc3b33b0c/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
