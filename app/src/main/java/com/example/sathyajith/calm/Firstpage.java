@@ -54,7 +54,7 @@ public void lookoutclick(View v)
 }
 public void missingclick(View v)
 {
-    Intent i=new Intent(this,MissingSearch.class);
+    Intent i=new Intent(this,Main2Activity.class);
     startActivity(i);
 
 }

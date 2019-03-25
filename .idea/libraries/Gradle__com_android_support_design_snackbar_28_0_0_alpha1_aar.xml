@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-snackbar:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/b35ce124fb5451012c8368bee1e87407/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/b35ce124fb5451012c8368bee1e87407/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/9df355283632df644e92c5b8d06e1a58/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/9df355283632df644e92c5b8d06e1a58/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

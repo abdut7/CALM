@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-bottomnavigation:28.0.0-alpha1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b7071cb9197465064e7b9a4a881955fc/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b0f783757d807615d41795302509e4a5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b7071cb9197465064e7b9a4a881955fc/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b7071cb9197465064e7b9a4a881955fc/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b0f783757d807615d41795302509e4a5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/b0f783757d807615d41795302509e4a5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -15,9 +15,29 @@ import java.util.List;
 public class MissingAdapter extends RecyclerView.Adapter<MissingAdapter.MyViewHolder>{
     private List<Missingmodel> missingList;
 Context ctx;
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView txname,txage,txinfo,txloc;
+        ImageView imgview;
+
+        public MyViewHolder(View view) {
+            super(view);
+            this.txname=txname;
+            this.txage=txage;
+            this.txinfo=txinfo;
+            this.txloc=txloc;
+            this.imgview=imgview;
+            txname=(TextView)view.findViewById(R.id.missingname);
+            txage = (TextView) view.findViewById(R.id.missingage);
+            txinfo = (TextView) view.findViewById(R.id.missinginfo);
+            txloc= (TextView) view.findViewById(R.id.missinglocc);
+            imgview=(ImageView)view.findViewById(R.id.imgmissing);
+        }
+    }
     public MissingAdapter(List<Missingmodel> missingList,Context ctx) {
         this.missingList = missingList;
         this.ctx=ctx;
+
     }
 
     @NonNull
@@ -38,23 +58,15 @@ Context ctx;
              holder.txloc.setText(missingitem.getLoc());
         Toast.makeText(ctx, "onbind", Toast.LENGTH_SHORT).show();
     }
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+    }
+
 
     @Override
     public int getItemCount() {
         return 0;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView txname,txage,txinfo,txloc;
-        ImageView imgview;
-
-        public MyViewHolder(View view) {
-            super(view);
-            txname=(TextView)view.findViewById(R.id.missingname);
-            txage = (TextView) view.findViewById(R.id.missingage);
-          txinfo = (TextView) view.findViewById(R.id.missinginfo);
-            txloc= (TextView) view.findViewById(R.id.missinglocc);
-            imgview=(ImageView)view.findViewById(R.id.imgmissing);
-        }
-    }
 }

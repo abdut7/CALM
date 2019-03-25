@@ -1,5 +1,6 @@
 package com.example.sathyajith.calm;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MissingSearch extends AppCompatActivity  {
-    private List<Missingmodel> missingList;
+    private ArrayList<Missingmodel> missingList;
     private RecyclerView recyclerView;
     private MissingAdapter mAdapter;
 
@@ -25,27 +26,28 @@ public class MissingSearch extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_missing_search);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        missingList = new ArrayList<Missingmodel>();
-
+       startActivity(new Intent(this,Main2Activity.class));
+missingList=new ArrayList<Missingmodel>();
             mAdapter = new MissingAdapter(missingList, getApplicationContext());
 
-        Missingmodel m=new Missingmodel("abdu","10","info","info"
 
 
+        Missingmodel m2=new Missingmodel("abdu","10","info","info");
+        missingList.add(0,m2);
+        Missingmodel m3=new Missingmodel("abdus","10ee","inefo","ienfo");
+        missingList.add(1,m3);
 
-        );
-        missingList.add(m); try{
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        }catch (Exception r){
-            Toast.makeText(this, "error"+r, Toast.LENGTH_SHORT).show();
-        }
+
 
         recyclerView.setAdapter(mAdapter);
-        Toast.makeText(this, "trse", Toast.LENGTH_SHORT).show();
-        makeItem();
+
+
+
+        mAdapter.notifyDataSetChanged();
 
 
 
@@ -55,13 +57,7 @@ public class MissingSearch extends AppCompatActivity  {
     }
 private  void makeItem(){
 
-        Missingmodel m2=new Missingmodel("abdu","10","info","info");
-    missingList.add(m2);
-        missingList.add(m2);
 
-
-
-    mAdapter.notifyDataSetChanged();
 
 }
 

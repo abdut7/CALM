@@ -36,7 +36,7 @@ boolean loginstatus=false;
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Userhomepage.this,MissingSearch.class));
+                startActivity(new Intent(Userhomepage.this,Main2Activity.class));
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
