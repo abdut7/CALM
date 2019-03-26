@@ -60,7 +60,7 @@ public class stationsignin extends AppCompatActivity {
                                // ...
                            }
                        });
-               Toast.makeText(stationsignin.this, "user "+u+"\n"+p, Toast.LENGTH_SHORT).show();
+              // Toast.makeText(stationsignin.this, "user "+u+"\n"+p, Toast.LENGTH_SHORT).show();
            }
 
 

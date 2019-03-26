@@ -16,6 +16,7 @@ public class addmissing extends AppCompatActivity {
     Button edphoto,edsubmit;
     SharedPreferences.Editor eds;
     private DatabaseReference mDatabase;
+
     int c=0;String upload;
     Missingmodel missing;
     @Override
@@ -31,17 +32,19 @@ public class addmissing extends AppCompatActivity {
         SharedPreferences sp=getSharedPreferences("MyPref", Activity.MODE_PRIVATE);
         eds= sp.edit();
         c=sp.getInt("missingno",0);
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase = FirebaseDatabase.getInstance().getReference("Added_MissingCases");
         edsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String name=edname.getText().toString();
                 String photo=edphoto.getText().toString();
                 String age=edage.getText().toString();
                 String loc=edloc.getText().toString();
                 String info=edinfo.getText().toString();
                 missing=new Missingmodel(name,age,loc,info);
-                mDatabase.child("Added_MissingCases").child(name).child("Missing ").setValue(missing);
+                edinfo.setText("");edage.setText("");edloc.setText("");edinfo.setText("");
+                mDatabase.push().setValue(missing);
 
             }
         });
